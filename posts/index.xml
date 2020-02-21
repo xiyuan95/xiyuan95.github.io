@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Здравствыйте!</title>
+    <link>https://xiyuan95.github.io/posts/</link>
+    <description>Recent content in Posts on Здравствыйте!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 21 Feb 2020 02:40:09 +0800</lastBuildDate>
+    
+	<atom:link href="https://xiyuan95.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>写在第一次</title>
+      <link>https://xiyuan95.github.io/posts/%E5%86%99%E5%9C%A8%E7%AC%AC%E4%B8%80%E6%AC%A1/</link>
+      <pubDate>Fri, 21 Feb 2020 02:40:09 +0800</pubDate>
+      
+      <guid>https://xiyuan95.github.io/posts/%E5%86%99%E5%9C%A8%E7%AC%AC%E4%B8%80%E6%AC%A1/</guid>
+      <description>拥有一个属于自己的网页的想法已经存在挺久了 却一直囿于技术、时间的原因没有去做 每次看到康宇和色徐的blog都蛮羡慕的 这次下定决心 以为靠自己+百度就能成功 却发现最后还是少不了康宇和色徐的帮助 总归 自己也是参与了一些 勉强会用起来啦 以后 要在这里多见面咯 2020年2月21日凌晨2:45完 cxy</description>
+    </item>
+    
+  </channel>
+</rss>
