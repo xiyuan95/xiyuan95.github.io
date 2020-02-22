@@ -2,7 +2,6 @@
 <html lang="en-US">
 
 <head>
-	<meta name="generator" content="Hugo 0.40.1" />
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,22 +13,22 @@
 <meta property="og:site_name" content="Послушай меня" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xiyuan95.github.io/" />
-<meta property="og:title" content="Послушай меня" />
-<meta property="twitter:title" content="Послушай меня">
+<meta property="og:url" content="https://xiyuan95.github.io/arcadia/%E6%88%91%E5%AD%A6r%E4%B8%80/" />
+<meta property="og:title" content="我学R（一）" />
+<meta property="twitter:title" content="我学R（一）">
 
     <meta property="twitter:card" content="summary">
 
-<meta property="og:description" content="Example blog">
-<meta property="twitter:description" content="Example blog">
+<meta property="og:description" content="">
+<meta property="twitter:description" content="">
 
 <title>
 
 
-    Послушай меня
+     Послушай меня - 我学R（一） 
 
 </title>
-<link rel="canonical" href="https://xiyuan95.github.io/">
+<link rel="canonical" href="https://xiyuan95.github.io/arcadia/%E6%88%91%E5%AD%A6r%E4%B8%80/">
 
 
 <style media="screen">
@@ -1066,8 +1065,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://xiyuan95.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Послушай меня" />
-
 
 </head>
 
@@ -1075,7 +1072,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <body>
 
 
-<div class="header header-home column">
+<div class="header column">
 
     <div class="container">
         
@@ -1104,25 +1101,137 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
+
+
 <div class="main column">
     <div class="container">
         <div class="content">
-            
+            <div class="page-heading">
 
-            
-                <div class="posts">
-                
-                
-                </div>
-            
+    
+    我学R（一）
+    
 
-            <div class="best-posts">
-            
-            
+</div>
+
+            <div class="markdown">
+                
+    
+    <p>今天学习的是循环（入门<br />
+下载安装R，RStudio，了解Studio的基本界面</p>
+
+<p>课程案例1：计算1到20的阶乘</p>
+
+<pre><code>z=1
+for(i in 1:20){
+  z=z*i
+  print(z)
+}
+z
+</code></pre>
+
+<p>课程案例2:把1到20所有数的阶乘形成一个向量（并调取其中第6个）</p>
+
+<pre><code>z=1
+my_factorial=c()
+for(i in 1:20){
+  z=z*i
+  my_factorial=c(my_factorial,z)
+}
+my_factorial[6]
+</code></pre>
+
+<p>作业1：计算数字1到500的所有和</p>
+
+<pre><code>z=1
+for(i in 1:500){
+  z=z+i
+}
+z
+</code></pre>
+
+<p>作业2:制作一个这样的长度为100的向量，其中第几个元素就是从1加到这个数的和<br />
+结果以5来展示</p>
+
+<pre><code>z=1
+my_homework1=c()
+for(i in 1:100){
+  z=z+1
+  my_homework1=c(my_homework1,z)
+}
+my_homework1[5]
+</code></pre>
+
+<p>作业思考题：计算从到20的每个数的双阶乘<br />
+这题根本不会，全靠徐老师教，看了10分钟才看懂</p>
+
+<pre><code>z &lt;- seq(1, 20)
+
+shuang_jie_cheng &lt;- function(z) {
+  if (z == 1) return(1)
+  else if (z == 2) return(2)
+  else return(z * shuang_jie_cheng(z-2))
+}
+
+#如果想要得到某个z值的结果 sapply(19, shuang_jie_cheng)
+sapply(z,shuang_jie_cheng)
+</code></pre>
+
+<p>笔记：seq的一般用法里包括</p>
+
+<pre><code>seq(from = 1,to = 20,by = 1)
+#从1到20，间隔1
+seq(from = 1,to = 20,length.out = 77)
+#从1到20，共77个数
+</code></pre>
+
+<p>笔记：以下函数的用法</p>
+
+<pre><code>length(my_factorial)
+sum(my_factorial)
+mean(my_factorial)
+#注意mean(1,2,3)不可用需要向量mean(c(1,2,3))
+
+rep(0,times=40)
+rep(c(1,2,3),times=40)
+rep(c(1,2,3),each=40)
+which(m)
+which.min(m)
+which.max(m)
+</code></pre>
+
+<p>笔记：paste函数的使用</p>
+
+<pre><code>z=1
+for(i in 1:20){
+  z=z*i
+  print(paste(&quot;the factorial of&quot;,i,&quot;is&quot;,z,sep=&quot; &quot;))
+}
+z
+</code></pre>
+
+<p>作业：创建一个累加函数</p>
+
+<pre><code>new_sum=function(x){
+  z=1
+  for(i in 1:x){
+    z=z+i
+  }
+  return(z)
+</code></pre>
+
+<p>高难度作业<br />
+判断输入的某个数字是否为质数
+写一个函数计算小于等于某数的素偶有质数，生成结果存在一个向量</p>
+
+
             </div>
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 
